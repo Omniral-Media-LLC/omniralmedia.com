@@ -2,7 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 import { AiFillLinkedin } from 'react-icons/ai';
 import Logo from '../../images/logo.png';
-import { Container, Div1, SocialIcons } from './HeaderStyles';
+import { Container, Div1, NavMenu, SocialIcons } from './HeaderStyles';
+import {Button} from "../../styles/GlobalComponents/Button";
 
 const Header = () =>  (
   <Container style={{ maxWidth: '1060px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', color:"white" }}>
@@ -13,6 +14,30 @@ const Header = () =>  (
         </a>
       </Link>
     </Div1>
+    <NavMenu>
+      <ul>
+        <li>
+          <Link href="/what-we-offer">
+            What We Offer
+          </Link>
+        </li>
+        <li>
+          <Link href="/managed-services">
+            Managed Services
+          </Link>
+        </li>
+        <li>
+          <Link href="/about-us">
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link href="/start-a-project">
+            Start a Project
+          </Link>
+        </li>
+      </ul>
+    </NavMenu>
     <Div1>
       <SocialIcons href="https://www.linkedin.com/company/omniral-media-llc/" target="_blank">
         <AiFillLinkedin size="3rem" />

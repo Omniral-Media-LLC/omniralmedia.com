@@ -135,38 +135,6 @@ const Contact = () => {
               />
             </FirstInputsInner>
           </FirstInputs>
-          <FirstInputs style={{ marginTop: '1.5rem'}}>
-            <FirstInputsInner>
-              <label style={{ marginRight: '1rem' }}>Company</label>
-              <ContactInput
-                value={formContent.phone}
-                type="tel"
-                id="phone"
-                onChange={handleFormChange}
-                disabled={formSubmitted}
-              />
-            </FirstInputsInner>
-            <FirstInputsInner>
-              <label style={{ marginRight: '1rem' }}>Phone</label>
-              <ContactInput
-                value={formContent.phone}
-                type="tel"
-                id="phone"
-                onChange={handleFormChange}
-                disabled={formSubmitted}
-              />
-            </FirstInputsInner>
-            <FirstInputsInner>
-              <label style={{ marginRight: '1rem' }}>Phone</label>
-              <ContactInput
-                value={formContent.phone}
-                type="tel"
-                id="phone"
-                onChange={handleFormChange}
-                disabled={formSubmitted}
-              />
-            </FirstInputsInner>
-          </FirstInputs>
           <TextAreaInputContainer>
             <label style={{ marginRight: '1rem' }}>Message</label>
             <TextAreaInput

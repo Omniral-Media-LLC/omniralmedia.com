@@ -121,4 +121,23 @@ export const SocialIcons = styled.a`
     transform: scale(1.2);
     cursor: pointer;
   }
-`
+`;
+
+export const NavMenu = styled.div`
+  width: max-content;
+  ul {
+    li {
+      display: inline-block;
+      a {
+        color: white;
+        transition: 0.3s;
+        &:hover {
+          color: #ddbb85;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+`;

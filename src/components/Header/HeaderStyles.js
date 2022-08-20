@@ -8,6 +8,9 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
+  @media only screen and (max-width: 912px) {
+    margin: 0 4.5rem !important;
+  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -121,10 +124,16 @@ export const SocialIcons = styled.a`
     transform: scale(1.2);
     cursor: pointer;
   }
+  @media only screen and (max-width: 912px) {
+    display: none;
+  }
 `;
 
 export const NavMenu = styled.div`
   width: max-content;
+  @media only screen and (max-width: 912px) {
+    display: none;
+  }
   ul {
     li {
       display: inline-block;
@@ -137,6 +146,39 @@ export const NavMenu = styled.div`
       }
       &:not(:last-child) {
         margin-right: 2rem;
+      }
+    }
+  }
+`;
+
+export const HamberburgerMenu = styled.div`
+  z-index: 99999;
+  display: none;
+  @media only screen and (max-width: 912px) {
+    display: inline-block;
+  }
+`;
+
+export const SideNav = styled.div`
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  height: 100%;
+  background: #171717;
+  z-index: 999;
+`;
+
+export const SideNavList = styled.ul`
+  margin-top: 100px;
+  li {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    a {
+      color: white;
+      transition: 0.3s;
+      &:hover {
+        color: #ddbb85;
       }
     }
   }

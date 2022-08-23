@@ -2,22 +2,26 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
   padding: 1rem;
-  padding-top: 2rem;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  position: fixed;
+  z-index: 999;
+  height: 100px;
+  background-color: #171717;
+  box-shadow: 0px 20px 50px 5px #171717;
+  padding: 0 48px;
+  
   @media only screen and (max-width: 912px) {
-    margin: 0 4.5rem !important;
+    padding: 0 4.5rem !important;
   }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
+  @media only screen and (max-width: 414px) {
+    padding: 0 1.5rem !important;
   }
 `;
 export const Div1 = styled.div`
@@ -145,7 +149,7 @@ export const NavMenu = styled.div`
         }
       }
       &:not(:last-child) {
-        margin-right: 2rem;
+        margin-right: 4rem;
       }
     }
   }
@@ -162,11 +166,11 @@ export const HamberburgerMenu = styled.div`
 export const SideNav = styled.div`
   position: fixed;
   right: 0;
-  top: 0;
   min-width: 100%;
   height: 100%;
   background: #171717;
   z-index: 999;
+  margin-top: 100px;
 `;
 
 export const SideNavList = styled.ul`

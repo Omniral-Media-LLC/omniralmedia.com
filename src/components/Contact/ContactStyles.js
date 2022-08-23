@@ -81,7 +81,7 @@ export const BoxText = styled.p`
 
 export const Join = styled.div`
   display: flex;
-  max-width: 1040px;
+  max-width: 1440px;
   justify-content: center;
   align-items: center;
   padding-bottom: 80px;
@@ -153,13 +153,22 @@ export const TextAreaInput = styled.textarea`
 export const FirstInputs = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
   @media ${props => props.theme.breakpoints.sm}{
     flex-direction: column;
   }
 `
 
 export const FirstInputsInner = styled.div`
+  width: 50%;
+  padding: 0 3rem;
+  text-align: center;
+  label {
+    font-size: 2rem;
+  }
+  input {
+    margin: 2rem 0;
+    width: 100%;
+  }
   @media ${props => props.theme.breakpoints.sm}{
     display: flex;
     flex-direction: column;
@@ -172,9 +181,15 @@ export const FirstInputsInner = styled.div`
 `;
 
 export const TextAreaInputContainer = styled.div`
+  padding: 0 3rem;
+  label {
+    font-size: 2rem;
+  }
+  text-align: center;
   margin-top: 2rem;
-  display: flex;
-  align-items: center;
+  textarea {
+    margin-top: 2rem;
+  }
   @media ${props => props.theme.breakpoints.sm}{
     margin-top: 0rem;
     flex-direction: column;

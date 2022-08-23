@@ -5,7 +5,7 @@ export const validate = (formContent) => {
     errors.name = 'You forgot to add your name'
   }
 
-  if (formContent.email === '') {
+  if (formContent.userEmail === '') {
     errors.email = 'You forgot to add your email'
   }
 

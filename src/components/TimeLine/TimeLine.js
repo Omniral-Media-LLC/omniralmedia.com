@@ -50,7 +50,7 @@ const Timeline = () => {
       <SectionText>
         Sleep well at night knowing your website or application is in good hands.
       </SectionText>
-      <p>We can provide managed hosting solutions for your website or application at competitive rates.</p>
+      <ListParagraph>We can provide managed hosting solutions for your website or application at competitive rates.</ListParagraph>
       <List>
         <ListItem>
           <picture>

@@ -12,7 +12,7 @@ const Footer = () => {
       <LinkList>
         <Link href="/">
           <a>
-            <img src={LogoWhite.src} alt="Omniral Media LLC" width="200" />
+            <img src={LogoWhite.src} alt="Omniral Media LLC" width="100%" />
           </a>
         </Link>
         <LinkColumn>

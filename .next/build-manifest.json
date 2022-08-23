@@ -29,6 +29,26 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/about-us": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/about-us.js"
+    ],
+    "/managed-services": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/managed-services.js"
+    ],
+    "/start-a-project": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/start-a-project.js"
+    ],
+    "/what-we-offer": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/what-we-offer.js"
     ]
   },
   "ampFirstPages": []

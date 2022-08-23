@@ -5,7 +5,7 @@ export const Section = styled.section`
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 1440px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -30,7 +30,7 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => props.main ? '72px' : '56px'};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, #ddbb85 60.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;

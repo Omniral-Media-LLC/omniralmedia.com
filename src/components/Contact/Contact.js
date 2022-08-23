@@ -3,6 +3,7 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import { SendButton } from '../../styles/GlobalComponents/Button';
 import { Box, Boxes, ContactInput, FirstInputs, FirstInputsInner, TextAreaInput, TextAreaInputContainer } from './ContactStyles';
 import { validate } from './Validate';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -11,7 +12,8 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [formContent, setFormContent] = useState({
     name: '',
-    email: '',
+    email: 'cameron@camscott.me',
+    userEmail: '',
     phone: '',
     message: ''
   });
@@ -41,6 +43,13 @@ const Contact = () => {
         phone: '',
         message: ''
       })
+      // Sends the email
+      emailjs.send('service_p0l2p7i','template_cb83eyr', formContent, 'nThaiJ8fVwzHehtC0')
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        }, (err) => {
+          console.log('FAILED...', err);
+        });
     } else {
       setSuccess(false);
       setErrors(validate(formContent))
@@ -53,13 +62,13 @@ const Contact = () => {
     <Section id="contact">
       <SectionTitle>Contact</SectionTitle>
       <SectionText>
-        Just do it, make your dreams come true.
+        Let's create something together
       </SectionText>
       <Boxes>
         <Box>
           { formSubmitted === true && success === true
             ? (
-              <div style={{ borderRadius: '12px', background: 'linear-gradient(to right, #209941, #38FC6D)', padding: '2rem', marginBottom: '2rem' }}>
+              <div style={{ borderRadius: '12px', background: '#ddbb85', padding: '2rem', marginBottom: '2rem' }}>
                 <p>Message sent successfully :)</p>
               </div>
             )
@@ -67,7 +76,7 @@ const Contact = () => {
           }
           { formSubmitted === true && areThereErrors === true
             ? (
-              <div style={{ borderRadius: '12px', background: 'linear-gradient(to right, #993520, #FF5733)', padding: '2rem', marginBottom: '2rem' }}>
+              <div style={{ borderRadius: '12px', background: '#ddbb85', padding: '2rem', marginBottom: '2rem' }}>
                 <p>There were some errors, please check them below :(</p>
               </div>
             )
@@ -75,7 +84,7 @@ const Contact = () => {
           }
           <FirstInputs>
             <FirstInputsInner>
-              <label style={{ marginRight: '1rem' }}>Name</label>
+              <label style={{ marginRight: '1rem' }}>Name *</label>
               <ContactInput
                 value={formContent.name}
                 type="text"
@@ -86,8 +95,8 @@ const Contact = () => {
               {
                 'name' in errors
                   ? (
-                    <div>
-                      <small style={{ color: 'red', textAlign: 'center', marginLeft: '8rem' }}>
+                    <div style={{ marginBottom: '2rem' }}>
+                      <small style={{ color: 'red', textAlign: 'center' }}>
                         {errors.name}
                       </small>
                     </div>
@@ -95,19 +104,19 @@ const Contact = () => {
               }
             </FirstInputsInner>
             <FirstInputsInner>
-              <label style={{ marginRight: '1rem' }}>Email</label>
+              <label style={{ marginRight: '1rem' }}>Email *</label>
               <ContactInput
-                value={formContent.email}
+                value={formContent.userEmail}
                 type="email"
-                id="email"
+                id="userEmail"
                 onChange={handleFormChange}
                 disabled={formSubmitted}
               />
               {
                 'email' in errors
                   ? (
-                    <div>
-                      <small style={{ color: 'red', textAlign: 'center', marginLeft: '8rem' }}>
+                    <div style={{ marginBottom: '2rem' }}>
+                      <small style={{ color: 'red', textAlign: 'center' }}>
                         {errors.email}
                       </small>
                     </div>
@@ -117,17 +126,29 @@ const Contact = () => {
                 'emailFormat' in errors
                 ? (
                   <div>
-                    <small style={{ color: 'red', textAlign: 'center', marginLeft: '8rem' }}>
+                    <small style={{ color: 'red', textAlign: 'center' }}>
                       {errors.emailFormat}
                     </small>
                   </div>
                 ) : null
               }
             </FirstInputsInner>
+          </FirstInputs>
+          <FirstInputs>
             <FirstInputsInner>
               <label style={{ marginRight: '1rem' }}>Phone</label>
               <ContactInput
                 value={formContent.phone}
+                type="tel"
+                id="phone"
+                onChange={handleFormChange}
+                disabled={formSubmitted}
+              />
+            </FirstInputsInner>
+            <FirstInputsInner>
+              <label style={{ marginRight: '1rem' }}>Business Name</label>
+              <ContactInput
+                value={formContent.business}
                 type="tel"
                 id="phone"
                 onChange={handleFormChange}

@@ -45,7 +45,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
+    <Section id="about" style={{ marginBottom: '8rem'}}>
       <SectionTitle>Managed Services</SectionTitle>
       <SectionText>
         Sleep well at night knowing your website or application is in good hands.

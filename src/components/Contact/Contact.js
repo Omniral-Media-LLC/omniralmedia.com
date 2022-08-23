@@ -62,7 +62,7 @@ const Contact = () => {
     <Section id="contact">
       <SectionTitle>Contact</SectionTitle>
       <SectionText>
-        Let's create something together
+        Let's make those dreams come true
       </SectionText>
       <Boxes>
         <Box>

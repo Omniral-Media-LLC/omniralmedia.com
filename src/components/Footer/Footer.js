@@ -10,21 +10,42 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
-        <Link href="/">
-          <a>
-            <img src={LogoWhite.src} alt="Omniral Media LLC" width="100%" />
-          </a>
-        </Link>
+        <LinkColumn style={{ width: '20%'}}>
+          <img src={LogoWhite.src} alt="Omniral Media LLC" width="100%" />
+        </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:info@omniralmedia.com">
-            info@omniralmedia.com
+          <LinkItem>
+            <Link href="mailto:info@omniralmedia.com">
+              info@omniralmedia.com
+            </Link>
           </LinkItem>
         </LinkColumn>
         <LinkColumn>
-          <LinkTitle>Phone</LinkTitle>
-          <LinkItem href="tel:612-322-0124">
-            612.111.1111
+          <LinkTitle>Links</LinkTitle>
+          <LinkItem>
+            <ul>
+              <li style={{ display: 'inline-block', marginRight: '2.5rem' }}>
+                <Link href="what-we-offer">
+                  What We Offer
+                </Link>
+              </li>
+              <li style={{ display: 'inline-block', marginRight: '2.5rem' }}>
+                <Link href="/managed-services">
+                  Managed Services
+                </Link>
+              </li>
+              <li style={{ display: 'inline-block', marginRight: '2.5rem' }}>
+                <Link href="/about-us">
+                  About Us
+                </Link>
+              </li>
+              <li style={{ display: 'inline-block', marginRight: '2.5rem' }}>
+                <Link href="/start-a-project">
+                  Start a Project
+                </Link>
+              </li>
+            </ul>
           </LinkItem>
         </LinkColumn>
       </LinkList>

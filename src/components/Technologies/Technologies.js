@@ -13,7 +13,7 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
-  <Section id="tech">
+  <Section id="tech" style={{ margin: '0 0 8rem 0' }}>
     <SectionDivider divider />
     <SectionTitle>Expertise</SectionTitle>
     <SectionText>

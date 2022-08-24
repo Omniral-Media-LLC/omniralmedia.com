@@ -170,6 +170,8 @@ export const FirstInputsInner = styled.div`
     width: 100%;
   }
   @media ${props => props.theme.breakpoints.sm}{
+    padding: 0 1rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -191,6 +193,8 @@ export const TextAreaInputContainer = styled.div`
     margin-top: 2rem;
   }
   @media ${props => props.theme.breakpoints.sm}{
+    width: 100%;
+    padding: 0 1rem;
     margin-top: 0rem;
     flex-direction: column;
     margin-bottom: 1rem;

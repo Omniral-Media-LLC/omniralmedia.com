@@ -167,16 +167,32 @@ export const SideNav = styled.div`
   position: fixed;
   right: 0;
   min-width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #171717;
+  //background: red;
   z-index: 999;
+  animation-duration: 1s;
+  animation-name: slideInBottom;
   margin-top: 100px;
+  
+  @keyframes slideInBottom {
+    from {
+      height: 0;
+      width: 300%;
+    }
+
+    to {
+      height: 100vh;
+      width: 100%;
+    }
+  }
 `;
 
 export const SideNavList = styled.ul`
   margin-top: 100px;
+  height: max-content;
   li {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 3rem;
     a {
       color: white;

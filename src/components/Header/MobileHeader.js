@@ -7,10 +7,24 @@ export const MobileHeader = ({ isOpen }) => {
   return (
     <>
       <SideNav>
-        <Container style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', color:"white", marginTop: '100px' }}>
+        <Container style={{ maxWidth: '100%', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '100px' }}>
           <SideNavList>
             <li>
-              <Link href="/what-we-offer">
+              <Link
+                href="/what-we-offer"
+                style={
+                  (typeof window !== 'undefined') && window.location.pathname === '/what-we-offer'
+                    ? (
+                      {
+                        color: '#ddbb85'
+                      }
+                    ) : (
+                      {
+                        color: 'black'
+                      }
+                    )
+                }
+              >
                 What We Offer
               </Link>
             </li>

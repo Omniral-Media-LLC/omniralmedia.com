@@ -13,8 +13,13 @@ const Header = () => {
     if (isOpen) {
       document.body.style.overflow = 'scroll';
     } else {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'scroll';
     }
+  }
+
+  const closeSideNav = () => {
+    document.body.style.overflow = 'scroll';
+    setOpen(false);
   }
 
   return (
@@ -31,22 +36,25 @@ const Header = () => {
           <NavMenu>
             <ul>
               <li>
-                <Link href="/what-we-offer">
+                <Link
+                  href="/what-we-offer"
+                  onClick={() => { closeSideNav() }}
+                >
                   What We Offer
                 </Link>
               </li>
               <li>
-                <Link href="/managed-services">
+                <Link href="/managed-services" onClick={() => { closeSideNav() }}>
                   Managed Services
                 </Link>
               </li>
               <li>
-                <Link href="/about-us">
+                <Link href="/about-us" onClick={() => { closeSideNav() }}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/start-a-project">
+                <Link href="/start-a-project" onClick={() => { closeSideNav() }}>
                   Start a Project
                 </Link>
               </li>

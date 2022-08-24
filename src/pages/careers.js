@@ -23,11 +23,11 @@ const CareersPage = () => {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <link rel="canonical" href={window.location} />
+        <link rel="canonical" href="/" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Omniral Media LLC | web design & development" />
-        <meta property="og:url" content={window.location} />
+        <meta property="og:url" content="/" />
         <meta property="og:site_name" content="Omniral Media LLC" />
         <meta property="article:publisher" content="https://www.facebook.com/OmniralMediaLLC" />
         <meta property="og:image" content={logo.src} />

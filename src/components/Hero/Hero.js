@@ -5,7 +5,7 @@ import { LeftSection } from './HeroStyles';
 
 const Hero = (props) => (
   <>
-    <Section row nopadding style={{ marginTop: '80px'}}>
+    <Section row nopadding style={{ marginTop: '-80px' }}>
       <LeftSection>
         <SectionTitle main center>
           Professional<br />

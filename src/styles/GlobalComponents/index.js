@@ -4,7 +4,7 @@ export const Section = styled.section`
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
-  margin: 0 auto;
+  margin: 150px auto;
   max-width: 1440px;
   box-sizing: content-box;
   position: relative;
@@ -18,7 +18,7 @@ export const Section = styled.section`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
-
+    margin-top: 120px;
     width: calc(100vw - 32px);
     flex-direction: column;
   }

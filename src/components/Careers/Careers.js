@@ -24,7 +24,7 @@ import Jobs from '../../images/jobs.svg';
 import {Button} from "../../styles/GlobalComponents/Button";
 
 const Technologies = () =>  (
-  <Section id="tech" style={{ marginTop: '150px'}}>
+  <Section id="tech">
     <SectionTitle>Careers</SectionTitle>
     <SectionText>
       A progressive hybrid worker owned cooperative that cares about its employees, where you own the means of production, not just the top executives.

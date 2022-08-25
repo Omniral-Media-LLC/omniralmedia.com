@@ -11,9 +11,9 @@
   ],
   "lowPriorityFiles": [
     "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/development/_ssgManifest.js",
+    "static/development/_middlewareManifest.js"
   ],
-  "rootMainFiles": [],
   "pages": {
     "/_app": [
       "static/chunks/webpack.js",
@@ -35,10 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/managed-services.js"
     ],
-    "/what-we-offer": [
+    "/start-a-project": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/what-we-offer.js"
+      "static/chunks/pages/start-a-project.js"
     ]
   },
   "ampFirstPages": []

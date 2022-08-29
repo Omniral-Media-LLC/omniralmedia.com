@@ -30,7 +30,7 @@ import Contact from "../Contact/Contact";
 
 const Technologies = () =>  (
   <>
-    <Section id="tech" style={{ marginTop: '150px'}}>
+    <Section id="tech">
       <SectionTitle>Start a Project</SectionTitle>
       <SectionText>
         Get in touch with our team to learn how our expert web developers can make your digital dreams come true

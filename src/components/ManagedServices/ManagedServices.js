@@ -28,7 +28,7 @@ import UiUx from '../../images/ui_ux.svg';
 import {Button} from "../../styles/GlobalComponents/Button";
 
 const Technologies = () =>  (
-  <Section id="tech" style={{ marginTop: '150px'}}>
+  <Section id="tech">
     <SectionTitle>Managed Services</SectionTitle>
     <SectionText>
       Sleep well at night knowing your website or application is in good hands.

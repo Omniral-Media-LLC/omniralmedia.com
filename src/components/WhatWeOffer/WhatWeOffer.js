@@ -19,7 +19,7 @@ import UiUx from '../../images/ui_ux.svg';
 import {Button} from "../../styles/GlobalComponents/Button";
 
 const Technologies = () =>  (
-  <Section id="tech" style={{ marginTop: '150px'}}>
+  <Section id="tech">
     <SectionTitle>What We Offer</SectionTitle>
     <SectionText>
       We offer custom-tailored web solutions for any project.

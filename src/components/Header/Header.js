@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', display: 'flex', justifyContent: 'center' }}>
         <Container style={null}>
           <Div1 style={{ zIndex: 99999}}>
             <Link href="/">

@@ -40,8 +40,9 @@ const Contact = () => {
       setAreThereErrors(false);
       setFormContent({
         name: '',
-        email: '',
+        userEmail: '',
         phone: '',
+        business: '',
         message: ''
       })
       // Sends the email

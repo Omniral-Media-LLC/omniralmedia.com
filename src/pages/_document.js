@@ -1,7 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import ReactGA from 'react-ga';
-import Analytics from "../components/Analytics/Analytics";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -38,7 +36,6 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <Analytics />
         </body>
       </Html>
     );

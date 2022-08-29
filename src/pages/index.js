@@ -9,8 +9,12 @@ import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
 import favicon from "../images/favicon.png";
 import logo from "../images/logo.png";
+import ReactGA from "react-ga";
 
 const Home = () => {
+  ReactGA.initialize('G-H71N4W0SWF');
+  ReactGA.pageview('/');
+
   return (
     <>
     <Head>

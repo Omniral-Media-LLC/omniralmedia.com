@@ -9,8 +9,12 @@ import { Section } from '../styles/GlobalComponents';
 import favicon from "../images/favicon.png";
 import WhatWeOffer from "../components/WhatWeOffer/WhatWeOffer";
 import logo from "../images/logo.png";
+import ReactGA from "react-ga";
 
 const WhatWeOfferPage = () => {
+  ReactGA.initialize('G-H71N4W0SWF');
+  ReactGA.pageview('/what-we-offer');
+
   return (
     <>
       <Head>

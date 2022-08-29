@@ -1,13 +1,16 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-239219096-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
+
+    if (typeof window === "undefined") {
+      ReactGA.initialize('UA-239219096-1');
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }
 
     try {
       ctx.renderPage = () =>

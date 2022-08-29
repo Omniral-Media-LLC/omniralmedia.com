@@ -12,9 +12,10 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [formContent, setFormContent] = useState({
     name: '',
-    email: 'cameron@camscott.me',
+    email: 'info@omniralmedia.com',
     userEmail: '',
     phone: '',
+    business: '',
     message: ''
   });
 

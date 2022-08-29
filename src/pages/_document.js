@@ -2,6 +2,7 @@ import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
+  dataLayer;
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
@@ -34,7 +35,7 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
           <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
+            function gtag(){this.dataLayer.push(arguments)}
             gtag('js', new Date());
             gtag('config', 'UA-239219096-1');
           </script>

@@ -54,7 +54,7 @@ const Footer = () => {
           <Slogan>© 2022 Omniral Media LLC. All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://www.linkedin.com/in/cameron-scott-b3b304149/" target="_blank">
+          <SocialIcons href="https://www.linkedin.com/company/omniral-media-llc/" target="_blank">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
         </SocialContainer>

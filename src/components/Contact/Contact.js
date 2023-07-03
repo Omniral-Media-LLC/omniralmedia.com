@@ -12,9 +12,10 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [formContent, setFormContent] = useState({
     name: '',
-    email: 'cameron@camscott.me',
+    email: 'info@omniralmedia.com',
     userEmail: '',
     phone: '',
+    business: '',
     message: ''
   });
 
@@ -39,8 +40,9 @@ const Contact = () => {
       setAreThereErrors(false);
       setFormContent({
         name: '',
-        email: '',
+        userEmail: '',
         phone: '',
+        business: '',
         message: ''
       })
       // Sends the email
@@ -149,8 +151,8 @@ const Contact = () => {
               <label style={{ marginRight: '1rem' }}>Business Name</label>
               <ContactInput
                 value={formContent.business}
-                type="tel"
-                id="phone"
+                type="text"
+                id="business"
                 onChange={handleFormChange}
                 disabled={formSubmitted}
               />

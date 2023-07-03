@@ -9,8 +9,12 @@ import { Section } from '../styles/GlobalComponents';
 import favicon from "../images/favicon.png";
 import ManagedServices from "../components/ManagedServices/ManagedServices";
 import logo from "../images/logo.png";
+import ReactGA from "react-ga";
 
 const ManagedServicesPage = () => {
+  ReactGA.initialize('G-H71N4W0SWF');
+  ReactGA.pageview('/managed-services');
+
   return (
     <>
       <Head>

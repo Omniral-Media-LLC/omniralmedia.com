@@ -57,7 +57,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>© 2022 Omniral Media LLC. All rights reserved.</Slogan>
+          <Slogan>© 2022 - 2023 Omniral Media LLC. All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://www.linkedin.com/company/omniral-media-llc/" target="_blank">

@@ -2,5 +2,12 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/about-us": "pages/about-us.js"
+  "/about-us": "pages/about-us.html",
+  "/api/hello": "pages/api/hello.js",
+  "/careers": "pages/careers.html",
+  "/": "pages/index.html",
+  "/managed-services": "pages/managed-services.html",
+  "/start-a-project": "pages/start-a-project.html",
+  "/what-we-offer": "pages/what-we-offer.html",
+  "/404": "pages/404.html"
 }

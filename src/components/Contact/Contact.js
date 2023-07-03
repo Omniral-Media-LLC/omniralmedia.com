@@ -64,7 +64,7 @@ const Contact = () => {
     <Section id="contact">
       <SectionTitle>Contact</SectionTitle>
       <SectionText>
-        Let's make those dreams come true
+        Let's make those dreams come true. <br /><span>Fill out the form below or call us at <a href="tel:612-757-4334">(612) 757-4334</a>.</span>
       </SectionText>
       <Boxes>
         <Box>

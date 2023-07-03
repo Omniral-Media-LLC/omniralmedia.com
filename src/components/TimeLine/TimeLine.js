@@ -4,6 +4,7 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import {List, ListContainer, ListItem, ListParagraph, ListTitle} from "../Technologies/TechnologiesStyles";
 import {DiAtom, DiEclipse, DiMeteor, DiPhotoshop, DiReact, DiWordpress} from "react-icons/di";
+import LearnMore from "../LearnMore/LearnMore";
 
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
@@ -159,6 +160,7 @@ const Timeline = () => {
       {/*    );*/}
       {/*  })}*/}
       {/*</CarouselButtons>*/}
+      <LearnMore />
       <SectionDivider />
     </Section>
   );

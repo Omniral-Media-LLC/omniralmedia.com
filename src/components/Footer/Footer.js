@@ -20,6 +20,12 @@ const Footer = () => {
               info@omniralmedia.com
             </Link>
           </LinkItem>
+          <LinkTitle>Phone Number</LinkTitle>
+          <LinkItem>
+            <Link href="tel:612-757-4334">
+              612-757-4334
+            </Link>
+          </LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Links</LinkTitle>

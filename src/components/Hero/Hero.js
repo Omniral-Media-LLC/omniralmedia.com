@@ -13,8 +13,7 @@ const Hero = (props) => (
           development
         </SectionTitle>
         <SectionText>
-          At Omniral Media, we strive to uncomplicate the world of technology by solving business challenges with custom web-based solutions. We are a full-service custom software development firm, providing technological expertise for your digital needs & dreams. We develop tailored content managed websites and maintenance plans to fit any digital project.
-        </SectionText>
+          At Omniral Media, our mission is to simplify technology by offering innovative solutions that address your unique business challenges. As a comprehensive custom software development company, we specialize in providing advanced technological expertise to bring your digital aspirations to life. Our dedicated team crafts personalized web-based solutions, including content management systems, web applications, and tailored maintenance strategies, perfectly aligned with the requirements of your digital ventures.        </SectionText>
         <Button link="#contact" onClick={props.handleClick}>Get Started</Button>
       </LeftSection>
     </Section>

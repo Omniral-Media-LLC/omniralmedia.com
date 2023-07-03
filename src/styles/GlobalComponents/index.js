@@ -61,6 +61,13 @@ export const SectionText = styled.p`
   font-weight: 300;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
+  a {
+    transition: 0.3s;
+    color: #fff;
+    &:hover {
+      color: #ddbb85
+    }
+  }
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -167,6 +174,39 @@ export const SecondaryBtn = styled.button`
 `
 
 export const ButtonBack = styled.div`
+  width: ${({ alt }) => alt ? '150px' : '262px'};
+  height: ${({ alt }) => alt ? '52px' : '64px'};
+  border-radius: 50px;
+  font-size: ${({ alt }) => alt ? '20px' : '24px'};
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
+  color: #171717;
+  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #171717 0%, #171717 100%)' : 'linear-gradient(270deg, #fff 0%, #fff 100%)'};
+  cursor: pointer;
+  transition: 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  opacity: ${({ disabled }) => disabled ? '.5' : '1'};
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: ${({ alt }) => alt ? '150px' : '184px'};
+    height: ${({ alt }) => alt ? '52px' : '48px'};
+    font-size: ${({ alt }) => alt ? '20px' : '16px'};
+    margin-bottom: ${({ alt }) => alt ? '0' : '64px'};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 50%;
+    height: 50px;
+    font-size: 14px;
+    margin-bottom: ${({ alt }) => alt ? '0' : '32px'};
+  }
+`
+
+export const SmallerButtonBack = styled.div`
   width: ${({ alt }) => alt ? '150px' : '262px'};
   height: ${({ alt }) => alt ? '52px' : '64px'};
   border-radius: 50px;

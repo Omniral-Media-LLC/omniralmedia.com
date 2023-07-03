@@ -11,6 +11,8 @@ import {
 } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import {Button, SmallerButton} from "../../styles/GlobalComponents/Button";
+import LearnMore from "../LearnMore/LearnMore";
 
 const Technologies = () =>  (
   <Section id="tech" style={{ margin: '0 0 8rem 0' }}>
@@ -76,6 +78,7 @@ const Technologies = () =>  (
         </ListContainer>
       </ListItem>
     </List>
+    <LearnMore />
     <SectionDivider colorAlt />
   </Section>
 );

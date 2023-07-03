@@ -33,14 +33,14 @@ export const LinkItem = styled.div`
 	}
 
 	@media ${props => props.theme.breakpoints.md} {
-		font-size: 16px;
-		line-height: 28px;
+		font-size: 2rem;
+		line-height: 2rem;
 		display: flex;
 	}
 
 	@media ${props => props.theme.breakpoints.sm} {
-		font-size: 8px;
-		line-height: 14px;
+		font-size: 2rem;
+		line-height: 3rem;
 		margin-bottom: 8px;
 		display: flex;
 		align-items: center;

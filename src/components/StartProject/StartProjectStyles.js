@@ -231,3 +231,15 @@ export const ListIcon = styled.img`
     margin-bottom: 0px;
   }
 `
+
+export const SectionContact = styled.p`
+  font-size: 2rem;
+  a {
+    font-weight: bold;
+    color: #fff;
+    transition: 0.3s;
+    &:hover {
+      color: #ddbb85;
+    }
+  }
+`;

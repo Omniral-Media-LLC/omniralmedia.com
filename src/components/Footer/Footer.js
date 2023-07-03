@@ -20,12 +20,6 @@ const Footer = () => {
               info@omniralmedia.com
             </Link>
           </LinkItem>
-          <LinkTitle>Phone Number</LinkTitle>
-          <LinkItem>
-            <Link href="tel:612-757-4334">
-              (612) 757-4334
-            </Link>
-          </LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Links</LinkTitle>
@@ -57,7 +51,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>© 2022 - 2023 Omniral Media LLC. All rights reserved.</Slogan>
+          <Slogan>© 2022 Omniral Media LLC. All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://www.linkedin.com/in/cameron-scott-b3b304149/" target="_blank">
